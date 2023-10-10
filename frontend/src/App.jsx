@@ -1,15 +1,13 @@
 import "./App.css";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+// import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 
 function App() {
   return (
     <>
       <div>
-        <Navbar />
-        <Home />
-        <Sidebar />
+        {/* <Login /> */}
+        <Register />
       </div>
     </>
   );
