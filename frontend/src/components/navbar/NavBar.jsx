@@ -23,16 +23,21 @@ const NavBar = () => {
           <span>blueHike</span>
         </Link>
         <HomeOutlinedIcon />
-        {darkMode ? (
+        {/* {darkMode ? (
           <WbSunnyOutlinedIcon onClick={toggle} />
         ) : (
           <DarkModeOutlinedIcon onClick={toggle} />
-        )}
+        )} */}
         <GridViewOutlinedIcon />
         <div className="search">
           <SearchOutlinedIcon />
           <input type="text" placeholder="Search..." />
         </div>
+        {darkMode ? (
+          <WbSunnyOutlinedIcon onClick={toggle} />
+        ) : (
+          <DarkModeOutlinedIcon onClick={toggle} />
+        )}
       </div>
       <div className="right">
         <PersonOutlinedIcon />

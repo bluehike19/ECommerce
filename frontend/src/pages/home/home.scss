@@ -3,5 +3,13 @@
 .home {
   @include themify($themes) {
 background-color: themed('bgSoft');
-padding: 20px 50px;
+padding: 20px 40px;
+
+@include mobile {
+    padding: 10px;
+  }
+
+         @include tablet {
+           padding: 20px;
+         }
   }}

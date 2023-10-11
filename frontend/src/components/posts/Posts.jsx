@@ -14,15 +14,15 @@ const Posts = () => {
       id: 2,
       name: "simo blues",
       profilePic: "engineer.jpg",
-      desc: " hike time",
-      img: "penguins.jpg",
+      desc: " my lovely pet during hike time",
+      img: "Penguins.jpg",
     },
 
     {
       id: 3,
       name: "simo blues",
       profilePic: "book.jpg",
-      desc: " hike time",
+      desc: "straight to library after hike",
       img: "book.jpg",
     },
   ];

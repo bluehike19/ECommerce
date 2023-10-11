@@ -37,8 +37,8 @@ const RightBar = () => {
             <div className="userInfo">
               <img src="simo.jpg" alt="" />
               <p>
-                <span>simo blues</span>
-                changed their cover picture
+                <span>simoblues </span>
+                <span> changed their cover picture</span>
               </p>
             </div>
             <div className="buttons">

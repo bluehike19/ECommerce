@@ -13,11 +13,21 @@
   top: 0;
   background-color: themed('bg');
   color: themed('textColor');
+  z-index: 999;
+
+      @include mobile {
+          display: flex;
+          justify-content: space-between;
+        }
 
   .left{
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @include mobile {
+        gap: 50px;
+      }
 
     span{
       font-weight: bold;
@@ -38,11 +48,17 @@
         width: 400px;
         background-color: transparent;
         color: themed('textColor');
+
+        @include mobile {
+          display: none;
+        }
+
+                     @include tablet {
+                       width: 200px;
+                     }
       }
 
-      input:active {
-        border: none;
-      }
+    
     }
   }
 
@@ -51,11 +67,19 @@
     align-items: center;
     gap: 20px;
 
+    @include mobile {
+      display: none;
+    }
+
     .user {
       display: flex;
       align-items: center;
       gap: 10px;
       font-weight: 500;
+
+        @include tablet {
+            display: none;
+          }
 
       img {
         width: 30px;

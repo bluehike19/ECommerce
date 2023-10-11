@@ -9,6 +9,14 @@
   height: calc(100vh - 70px);
   overflow-y: scroll;
   background-color: themed('bgSoft');
+
+  @include mobile {
+      display: none;
+    }
+
+            @include tablet {
+              display: none;
+            }
   
   &::-webkit-scrollbar{
     display: none;
@@ -62,6 +70,7 @@ color: themed('textColorSoft');
 
           p {
             color: themed('textColor');
+            gap: 10px;
           }
 
           span{
