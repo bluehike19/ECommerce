@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import "./rightBar.scss";
+import { AuthContext } from "../../context/authContext";
 
 const RightBar = () => {
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <div className="rightBar">
       <div className="container">
@@ -8,8 +12,8 @@ const RightBar = () => {
           <span>Suggestions For You</span>
           <div className="user">
             <div className="userInfo">
-              <img src="simo.jpg" alt="" />
-              <span>simo blues</span>
+              <img src={currentUser.profilePic} alt="" />
+              <span>{currentUser.name}</span>
             </div>
             <div className="buttons">
               <button>follow</button>

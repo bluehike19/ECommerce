@@ -1,9 +1,14 @@
+@import '../../style.scss';
+
+
 .rightBar {
+  @include themify($themes) {
   flex: 3.5;
   position: sticky;
   top: 70px;
   height: calc(100vh - 70px);
   overflow-y: scroll;
+  background-color: themed('bgSoft');
   
   &::-webkit-scrollbar{
     display: none;
@@ -13,14 +18,16 @@
     padding: 20px;
 
     .item{
-      box-shadow: -4px -1px 3px 11px rgba(227, 225, 225, 0.27);
-        -webkit-box-shadow: -4px -1px 3px 11px rgba(227, 225, 225, 0.27);
-        -moz-box-shadow: -4px -1px 3px 11px rgba(227, 225, 225, 0.27);
+      // box-shadow: -4px -1px 3px 11px rgba(227, 225, 225, 0.27);
+        // -webkit-box-shadow: -4px -1px 3px 11px rgba(227, 225, 225, 0.27);
+        // -moz-box-shadow: -4px -1px 3px 11px rgba(227, 225, 225, 0.27);
+        border-radius: 5px;
         padding: 10px;
         margin-bottom: 20px;
+        background-color: themed('bg');
 
       span {
-color: gray;
+color: themed('textColorSoft');
       }
 
       .user {
@@ -54,7 +61,7 @@ color: gray;
           }
 
           p {
-            color: gray;
+            color: themed('textColor');
           }
 
           span{
@@ -91,4 +98,5 @@ color: gray;
     }
   }
 
+}
 }
